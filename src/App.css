@@ -1,38 +1,113 @@
-.App {
+.bg_container {
+  background-image: url("../public/banner-bg.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: auto;
+}
+
+.header_section_top {
+  width: 100%;
+  float: left;
+  background-color: #2b2a29;
+  clip-path: polygon(0 0, 100% 0, 96% 100%, 3% 100%);
+  height: auto;
+  padding: 10px 0px;
+}
+
+.custom_menu {
+  width: 100%;
+  margin: 0 auto;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.custom_menu ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  display: inline-block;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.custom_menu li {
+  float: left;
+  font-size: 16px;
+  color: #f1f1f1;
+  padding: 6px 10px 0px 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.custom_menu li a {
+  color: #f1f1f1;
+}
+
+.custom_menu li a:hover {
+  color: #f26522;
+}
+
+.logo_text {
+  text-align: center;
   color: white;
+  font-size: 4rem;
+  margin-top: 1.2rem;
 }
 
-.App-link {
-  color: #61dafb;
+.electronic_img {
+  width: 100%;
+  text-align: center;
+  height: 293px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.cardSection {
+  margin: 0 0 0 10em;
+}
+
+.imgText{
+  height: 12rem;
+}
+
+.icons{
+  color: white;
+  font-size: 2rem;
+}
+
+.iconsText{
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0.2rem;
+}
+
+.swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+@media screen and (max-width: 576px) {
+  .swiper-container {
+    width: 576px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .header_section_top {
+    display: none;
+  }
+
+  .bg_container{
+    background-size: cover;
+  }
+  .cathead{
+    display: none;
+  }
+
+  .buynowsection{
+    margin: 2rem;
+  }
+
+  .cardSection {
+    margin: 0 0 0 10em;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .swiper-container {
+    width: 768px;
   }
 }
