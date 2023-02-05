@@ -111,8 +111,10 @@ function App() {
             <Col className="cathead">
               <ConfigProvider theme={{
                 token: {
-                  colorText:'white',
-                  colorBgBase: '#2b2a29',
+                  colorBgBase:"black",
+                  colorTextBase:"white",
+                  colorHighlight:"white",
+                  controlItemBgActive:"blue",
                 },
               }}>
                 <Select
