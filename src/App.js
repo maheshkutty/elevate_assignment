@@ -58,7 +58,7 @@ function App() {
   const getProduct = async (value) => {
     setSelCat(value);
     if (value === "All Category") {
-      updateAllProduct();
+      await updateAllProduct();
     } else {
       let products = await axios.get(`https://fakestoreapi.com/products/category/${value}`);
       products = await products.data;
